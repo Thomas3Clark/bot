@@ -28,7 +28,6 @@ async def on_server_join(ser):
         await bot.send_message(ser.default_channel,
                                'Unfortunately kiddo, I need to be able to give you a dick! '
                                'Hail Satan!\n'
-                               'https://discordapp.com/oauth2/authorize?client_id=284941193714860032&scope=bot&permissions=201329664')
         await bot.leave_server(ser)
 
 
