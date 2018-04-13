@@ -23,11 +23,11 @@ async def on_ready():
 
 @bot.event
 async def on_server_join(ser):
-    await bot.send_message(ser.default_channel, 'Hi {}, I\'m DadBot!'.format(ser.name))
+    await bot.send_message(ser.default_channel, 'Hi {}, i\'m gay!'.format(ser.name))
     if not ser.me.server_permissions.manage_nicknames:
         await bot.send_message(ser.default_channel,
-                               'Unfortunately kiddo, I need to be able to give you a nick! '
-                               'Invite me back with that permission!\n'
+                               'Unfortunately kiddo, I need to be able to give you a dick! '
+                               'Hail Satan!\n'
                                'https://discordapp.com/oauth2/authorize?client_id=284941193714860032&scope=bot&permissions=201329664')
         await bot.leave_server(ser)
 
@@ -43,10 +43,10 @@ async def dadjoke(message):
                 if len(word) > 32:
                     word = '<LONG DADJOKE>'
                 await bot.change_nickname(message.author, word)
-                await bot.send_message(message.channel, 'Hi {}, I\'m dad!'.format(word))
+                await bot.send_message(message.channel, 'Hi {}, I\'m dead!'.format(word))
             else:
                 await bot.send_message(message.server.default_channel,
-                                       'Hey! Who stole my pencil! I can\'t nick anyone!')
+                                       'Hey! Who the fuck stole my pencil! I can\'t smoke weed anymore!')
 
 
 bot.run(TOKEN, bot=True)
